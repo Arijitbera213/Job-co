@@ -98,11 +98,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   // //TextEditingController email = new TextEditingController();
   // TextEditingController phnum1 = new TextEditingController();
   Future<firebase_storage.UploadTask> uploadFile(PickedFile file) async {
-    if (file == null) {
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-        content: Text('No file was selected'),
-      ));
-      return null;
+ 
     }
 
     firebase_storage.UploadTask uploadTask;
